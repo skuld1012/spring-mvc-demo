@@ -10,7 +10,6 @@ import org.springframework.stereotype.Controller;
 import org.springframework.ui.Model;
 import org.springframework.web.bind.annotation.RequestMapping;
 import org.springframework.web.bind.annotation.RequestMethod;
-import org.springframework.web.bind.annotation.RequestParam;
 
 @Controller
 public class OffersController {
@@ -32,11 +31,10 @@ public class OffersController {
 
 		return "createoffer";
 	}
-
-	@RequestMapping(value="/test", method=RequestMethod.GET)
-	public String showTest(Model model, @RequestParam("id") String id) {
+	
+	@RequestMapping(value="/docreate", method=RequestMethod.POST)
+	public String doCreate(Model model, Offer offer) {
 		
-		System.out.println(id);
-		return "home";
+		return "docreate";
 	}
 }
