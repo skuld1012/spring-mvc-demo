@@ -22,4 +22,12 @@ public class OffersService {
 		
 		return offersDao.getOffers();
 	}
+
+	public void createOffer(Offer offer) {
+		offersDao.create(offer);
+	}
+
+	public void throwTestException() {
+		offersDao.getOfferById(999);
+	}
 }

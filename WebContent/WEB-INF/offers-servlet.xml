@@ -13,5 +13,5 @@
 		<property name="prefix" value="/WEB-INF/jsp/"></property>
 		<property name="suffix" value=".jsp"></property>
 	</bean>
-	<mvc:resources mapping="/static/**" location="/resources"></mvc:resources>
+	<mvc:resources mapping="/static/**" location="/resources/"></mvc:resources>
 </beans>
